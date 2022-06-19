@@ -69,8 +69,7 @@ def get_ingress_yaml(spec, name, **kwargs):
         spec:
           tls:
           - hosts:
-            - localhost
-              {spec.get('host', 'localhost')}
+            - {spec.get('host', 'localhost')}
             secretname: ingress-demo-tls
           rules:
           - host: {spec.get('host', 'localhost')}
