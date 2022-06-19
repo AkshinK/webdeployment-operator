@@ -1,0 +1,8 @@
+apiVersion: mydomain.local/v1
+kind: WebDeployment
+metadata:
+  name: sample-web-deployment
+spec:
+  replicas: 2
+  image: nginx:1.14.1
+  host: localhost
